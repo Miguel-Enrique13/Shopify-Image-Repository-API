@@ -25,9 +25,9 @@ gem 'puma', '~> 3.11'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'fast_jsonapi'
 gem 'activerecord-reset-pk-sequence'
 gem 'bcrypt'
+gem 'fast_jsonapi'
 gem 'jwt'
 gem 'simple_command'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
@@ -35,10 +35,10 @@ gem 'simple_command'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'pry'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry'
 end
 
 group :development do
@@ -47,12 +47,11 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'simplecov'
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'simplecov'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
