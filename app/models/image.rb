@@ -1,9 +1,9 @@
 class Image < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
-  validates :price, presence: true, numericality: {only_float: true}
-  validates :inventory, presence: true, numericality: {only_integer: true}
-  validates_inclusion_of :public?, :in => ["private", "public"]
+  validates :price, presence: true, numericality: { only_float: true }
+  validates :inventory, presence: true, numericality: { only_integer: true }
+  validates :public?, inclusion: { in: %w[private public] }
 
   has_one_attached :image_file
 
