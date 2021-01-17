@@ -26,11 +26,11 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'activerecord-reset-pk-sequence'
+gem 'activestorage'
 gem 'bcrypt'
 gem 'fast_jsonapi'
 gem 'jwt'
 gem 'simple_command'
-gem 'activestorage'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
