@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2021_01_16_230454) do
   create_table "images", force: :cascade do |t|
     t.string "description", default: "---"
     t.string "title", default: "---"
-    t.string "privacy", default: "privacy"
+    t.string "privacy", default: "private"
     t.float "price", default: 0.0
     t.integer "inventory", default: 0
     t.datetime "created_at", null: false

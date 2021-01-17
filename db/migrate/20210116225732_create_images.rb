@@ -3,7 +3,7 @@ class CreateImages < ActiveRecord::Migration[5.2]
     create_table :images do |t|
       t.string :description, default: '---'
       t.string :title, default: '---'
-      t.string :privacy, default: 'privacy'
+      t.string :privacy, default: 'private'
       t.float :price, default: 0.0
       t.integer :inventory, default: 0
 
