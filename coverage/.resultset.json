@@ -1,20 +1,57 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/spec/models/image_spec.rb": {
+      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/spec/requests/api/v1/image_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           1,
-          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
           null,
           null
         ]
@@ -331,45 +368,8 @@
           1,
           1,
           1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/app/models/image.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/spec/models/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
           null,
           null
         ]
@@ -386,41 +386,10 @@
           null
         ]
       },
-      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/spec/requests/api/v1/image_request_spec.rb": {
+      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/app/models/application_record.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           null
         ]
       },
@@ -508,14 +477,39 @@
         "lines": [
           1,
           1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          8,
+          null,
+          null,
+          1,
+          null,
           1,
           null,
           null,
           1,
           null,
           1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/Mguardia13/Documents/Software engineer/Shopify/Backend Internship/Shopify-Image-Repository-API/app/models/image.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -570,6 +564,6 @@
         ]
       }
     },
-    "timestamp": 1610857108
+    "timestamp": 1610860573
   }
 }
