@@ -44,7 +44,8 @@ Sample Request: localhost:3000/api/v1/create_user?email=example@email.com&passwo
 <details>
   <summary> Sample Response: </summary>
   
-  ```{
+  ```
+  {
     "message": "User created successfully"
 }
 ```
@@ -67,8 +68,9 @@ Sample Request: localhost:3000/api/v1/authenticate?email=example@email.com&passw
 <details>
   <summary> Sample Response: </summary>
   
-  ```{
-     "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2MTEwMTA0NzF9.AsAnk6gPwEss7L9nvgdUNnQjpooPQIKMmYWMmT1ktD4"
+  ```
+  {
+     "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MTEwMTIzNDh9.ESAybXEYVyiUkPM4hbDsD-ZUuVGd4GErkoTVUwCGpkw"
 }
 ```
 </details>
@@ -83,7 +85,7 @@ headers:
 |---|---|---|
 |`Authorization`|`Required`|`string`|
 
-parameters: 
+**POSTMAN** Body -> Form-data: 
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -94,43 +96,44 @@ Sample Request: localhost:3000/api/v1/bulk_images
 <details>
   <summary> Sample Response: </summary>
   
-  ```{
+  ```
+{
     "data": [
         {
-            "id": "3",
+            "id": "1",
             "type": "image",
             "attributes": {
-                "id": 3,
+                "id": 1,
                 "title": "---",
                 "description": "---",
                 "price": 0.0,
-                "privacy": "privacy",
+                "privacy": "private",
                 "inventory": 0
             },
             "relationships": {
                 "user": {
                     "data": {
-                        "id": "3",
+                        "id": "1",
                         "type": "user"
                     }
                 }
             }
         },
         {
-            "id": "4",
+            "id": "2",
             "type": "image",
             "attributes": {
-                "id": 4,
+                "id": 2,
                 "title": "---",
                 "description": "---",
                 "price": 0.0,
-                "privacy": "privacy",
+                "privacy": "private",
                 "inventory": 0
             },
             "relationships": {
                 "user": {
                     "data": {
-                        "id": "3",
+                        "id": "1",
                         "type": "user"
                     }
                 }
@@ -140,6 +143,127 @@ Sample Request: localhost:3000/api/v1/bulk_images
 }
 ```
 </details>
+
+## POST one_image
+With this endpoint, a user can upload one image. To succesfully upload the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
+
+headers:
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`Authorization`|`Required`|`string`|
+
+**POSTMAN** Body -> Form-data: 
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`image_file`|`required`|`string`|
+|`title`|`required`|`string`|
+|`description`|`required`|`string`|
+|`price`|`required`|`float`|
+|`invetory`|`required`|`integer`|
+|`privacy`|`required`|`string`|
+
+Sample Request: localhost:3000/api/v1/one_image
+
+<details>
+  <summary> Sample Response: </summary>
+  
+  ```
+{
+    "data": {
+        "id": "3",
+        "type": "image",
+        "attributes": {
+            "id": 3,
+            "title": "Image title",
+            "description": "Image description",
+            "price": 1.0,
+            "privacy": "private",
+            "inventory": 6
+        },
+        "relationships": {
+            "user": {
+                "data": {
+                    "id": "1",
+                    "type": "user"
+                }
+            }
+        }
+    }
+}
+```
+</details>
+
+## DELETE bulk_images
+
+With this endpoint, a user can delete multiple image. To succesfully delete the images, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
+
+headers:
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`Authorization`|`Required`|`string`|
+
+**POSTMAN** Body -> Form-data: 
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`image_id[]`|`required`|`integers separated by comma`|
+
+Sample Request: localhost:3000/api/v1/bulk_images
+
+<details>
+  <summary> Sample Response: </summary>
+  
+  ```
+{
+    "message": "All authorized images have been deleted"
+}
+```
+</details>
+
+## DELETE one_image
+
+
+With this endpoint, a user can delete one image. To succesfully delete the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
+
+headers:
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`Authorization`|`Required`|`string`|
+
+**POSTMAN** Body -> Form-data: 
+
+| Keys  |  Requirement | Type  |
+|---|---|---|
+|`image_id`|`required`|`integer`|
+
+Sample Request: localhost:3000/api/v1/one_image
+
+<details>
+  <summary> Sample Response: </summary>
+  
+  ```
+{
+    "message": "Image deleted"
+}
+```
+</details>
+
+## Storage
+Your local disk will serve as the storage. Although typically a cloud service would be used for storage, for this occasion local storage works.
+
+## Testing
+All endpoint happy paths were tested. With more time, I would've also tested the sad paths. 
+
+## Versions
+
+![](https://img.shields.io/badge/Rails-5.2.4.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+
+
 
 
 
