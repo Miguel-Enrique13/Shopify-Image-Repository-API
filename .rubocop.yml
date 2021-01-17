@@ -12,6 +12,11 @@ AllCops:
     - ‘spec/**/*’
     - ‘vendor/**/*’
     - ‘./*’
+    - 'db/schema.rb'
+    - 'db/migrate/20210116223636_create_active_storage_tables.active_storage.rb'
+    - 'config/environments/development.rb'
+    - 'bin/update'
+    - 'bin/setup'
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/Documentation:
