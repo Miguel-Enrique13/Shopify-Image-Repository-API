@@ -8,7 +8,7 @@ describe 'Images-' do
       description: 'Ultimate Description',
       price: 5.99,
       inventory: 7,
-      privacy: 'privacy'
+      privacy: 'private'
     }
 
     headers = { 'CONTENT_TYPE' => 'application/json' }
