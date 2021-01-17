@@ -30,6 +30,7 @@ gem 'bcrypt'
 gem 'fast_jsonapi'
 gem 'jwt'
 gem 'simple_command'
+gem 'activestorage'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
