@@ -16,6 +16,7 @@ class Api::V1::ImagesController < ApplicationController
   def delete_one_image
     if @current_user == Image.find(params[:image_id]).user
       Image.destroy(params[:image_id])
+      render json: { message: "Image deleted"}, status: 200
     else
       render json: { errors: 'Unauthorized User' }, status: :unauthorized
     end
