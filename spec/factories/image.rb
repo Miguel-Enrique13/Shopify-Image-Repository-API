@@ -4,7 +4,7 @@ FactoryBot.define do
     title { Faker::Space.star }
     price { Faker::Commerce.price(range: 0..100.00) }
     inventory { Faker::Number.within(range: 0..100) }
-    privacy { "privacy"}
+    privacy { 'privacy' }
     user
   end
 end
