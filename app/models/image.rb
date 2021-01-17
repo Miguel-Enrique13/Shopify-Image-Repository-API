@@ -3,7 +3,7 @@ class Image < ApplicationRecord
   validates :description, presence: true
   validates :price, presence: true, numericality: { only_float: true }
   validates :inventory, presence: true, numericality: { only_integer: true }
-  validates :public?, inclusion: { in: %w[private public] }
+  validates :privacy, inclusion: { in: %w[privacy public] }
 
   has_one_attached :image_file
 
