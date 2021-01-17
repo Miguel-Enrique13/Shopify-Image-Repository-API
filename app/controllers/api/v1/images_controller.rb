@@ -23,7 +23,7 @@ class Api::V1::ImagesController < ApplicationController
 
   def delete_bulk_images
     params[:image_id].each do |id|
-      Image.destroy(id) if Image.find(id).user == @current_user
+      Image.destroy(id) if Image.find(id) && Image.find(id).user == @current_user
     end
 
     render json: { message: 'All authorized images have been deleted' }

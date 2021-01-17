@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'authenticate', to: 'authentication#authenticate'
 
+      post 'create_user', to: 'users#create'
+
       post 'one_image', to: 'images#upload_one_image'
       post 'bulk_images', to: 'images#upload_bulk_images'
 
