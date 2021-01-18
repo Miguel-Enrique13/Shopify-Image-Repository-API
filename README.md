@@ -256,7 +256,7 @@ Sample Request: localhost:3000/api/v1/one_image
 </details>
 
 ## Project Board
-- This [Github Project]() was used to break down tasked and keep the work organized.
+- This [Github Project](https://github.com/Miguel-Enrique13/Shopify-Image-Repository-API/projects/1) was used to break down tasked and keep the work organized.
 - I used version control through branches and Pull Requests
 
 ## Storage
@@ -271,7 +271,7 @@ All endpoint happy paths were tested. Although sad paths were built I did not ha
 ![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
 ## Author
-Miguel Guardia | [LinkedIn]() | [GitHub]()
+Miguel Guardia | [LinkedIn](https://www.linkedin.com/in/miguelguardia13/) | [GitHub](https://github.com/Miguel-Enrique13)
 
 
 
