@@ -52,7 +52,7 @@ Sample Request: localhost:3000/api/v1/create_user?email=example@email.com&passwo
 ```
 </details>
 
-## POST authenticate
+### POST authenticate
 
 Once a user is created, you can call this endpoint to create an AuthToken specific to your user. This AuthToken will be important for calling future endpoints.
 
@@ -76,7 +76,7 @@ Sample Request: localhost:3000/api/v1/authenticate?email=example@email.com&passw
 ```
 </details>
 
-## POST bulk_images
+### POST bulk_images
 
 With this endpoint, a user can upload multiple images. To succesfully upload the images, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.    
 
@@ -145,7 +145,7 @@ Sample Request: localhost:3000/api/v1/bulk_images
 ```
 </details>
 
-## POST one_image
+### POST one_image
 With this endpoint, a user can upload one image. To succesfully upload the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
 
 headers:
@@ -196,7 +196,7 @@ Sample Request: localhost:3000/api/v1/one_image
 ```
 </details>
 
-## DELETE bulk_images
+### DELETE bulk_images
 
 With this endpoint, a user can delete multiple image. To succesfully delete the images, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
 
@@ -224,7 +224,7 @@ Sample Request: localhost:3000/api/v1/bulk_images
 ```
 </details>
 
-## DELETE one_image
+### DELETE one_image
 
 
 With this endpoint, a user can delete one image. To succesfully delete the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
@@ -257,7 +257,7 @@ Sample Request: localhost:3000/api/v1/one_image
 Your local disk will serve as the storage. Although typically a cloud service would be used for storage, for this occasion local storage works.
 
 ## Testing
-All endpoint happy paths were tested. With more time, I would've also tested the sad paths. 
+All endpoint happy paths were tested. Although sad paths were built I did not have time to test them.
 
 ## Versions
 
