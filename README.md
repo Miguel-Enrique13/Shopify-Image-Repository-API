@@ -13,9 +13,11 @@ The shopify image repository is an api that allows users to upload/delete images
     - [POST bulk_images](#post-bulk_images)
     - [DELETE one_image](#delete-one_image)
     - [DELETE bulk_images](#delete-bulk_images)
+1. [Project Board](#project-board)
 1. [Storage](#storage)
 1. [Testing](#testing)
 1. [Versions](#versions)
+
 
 ## Local Setup
 Use the following steps to run the app locally: 
@@ -252,6 +254,8 @@ Sample Request: localhost:3000/api/v1/one_image
 }
 ```
 </details>
+
+## Project Board
 
 ## Storage
 Your local disk will serve as the storage. Although typically a cloud service would be used for storage, for this occasion local storage works.
