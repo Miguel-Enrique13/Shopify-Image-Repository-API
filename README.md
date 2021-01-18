@@ -82,7 +82,7 @@ Sample Request: localhost:3000/api/v1/authenticate?email=example@email.com&passw
 
 With this endpoint, a user can upload multiple images. To succesfully upload the images, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.    
 
-headers:
+Headers:
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -150,7 +150,7 @@ Sample Request: localhost:3000/api/v1/bulk_images
 ### POST one_image
 With this endpoint, a user can upload one image. To succesfully upload the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
 
-headers:
+Headers:
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -202,7 +202,7 @@ Sample Request: localhost:3000/api/v1/one_image
 
 With this endpoint, a user can delete multiple image. To succesfully delete the images, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
 
-headers:
+Headers:
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -231,7 +231,7 @@ Sample Request: localhost:3000/api/v1/bulk_images
 
 With this endpoint, a user can delete one image. To succesfully delete the image, the user must provide their `AuthToken` as string value with `Authorization` as the key in the headers section.
 
-headers:
+Headers:
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
