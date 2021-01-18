@@ -29,6 +29,7 @@ Use the following steps to run the app locally:
 * `rails s`
 
 ## Endpoints
+**POSTMAN** body -> Form-Data
 
 ### POST create_user
 
@@ -88,7 +89,7 @@ headers:
 |---|---|---|
 |`Authorization`|`Required`|`string`|
 
-**POSTMAN** Body -> Form-data: 
+Body Form-Data: 
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -156,7 +157,7 @@ headers:
 |---|---|---|
 |`Authorization`|`Required`|`string`|
 
-**POSTMAN** Body -> Form-data: 
+Body Form-Data: 
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -208,7 +209,7 @@ headers:
 |---|---|---|
 |`Authorization`|`Required`|`string`|
 
-**POSTMAN** Body -> Form-data: 
+Body Form-Data: 
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
@@ -237,7 +238,7 @@ headers:
 |---|---|---|
 |`Authorization`|`Required`|`string`|
 
-**POSTMAN** Body -> Form-data: 
+Body Form-Data: 
 
 | Keys  |  Requirement | Type  |
 |---|---|---|
