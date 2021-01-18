@@ -258,6 +258,11 @@ Sample Request: localhost:3000/api/v1/one_image
 ## Project Board
 - This [Github Project](https://github.com/Miguel-Enrique13/Shopify-Image-Repository-API/projects/1) was used to break down tasked and keep the work organized.
 - I used version control through branches and Pull Requests
+- Next Steps:
+    - Allow users to modify image properties
+    - Allow users to search by image title and description
+    - Add a buy/sell feature
+    - Keep track of inventory
 
 ## Storage
 Your local disk will serve as the storage. Although typically a cloud service would be used for storage, for this occasion local storage works.
