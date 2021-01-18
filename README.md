@@ -24,6 +24,7 @@ Use the following steps to run the app locally:
 * `rails db:create`
 * `rails db:migrate`
 * `rails db:seed`
+* `rails s`
 
 ## Endpoints
 
