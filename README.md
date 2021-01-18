@@ -29,7 +29,6 @@ Use the following steps to run the app locally:
 * `rails s`
 
 ## Endpoints
-**POSTMAN** body -> Form-Data
 
 ### POST create_user
 
@@ -257,6 +256,8 @@ Sample Request: localhost:3000/api/v1/one_image
 </details>
 
 ## Project Board
+- This [Github Project]() was used to break down tasked and keep the work organized.
+- I used version control through branches and Pull Requests
 
 ## Storage
 Your local disk will serve as the storage. Although typically a cloud service would be used for storage, for this occasion local storage works.
@@ -268,6 +269,9 @@ All endpoint happy paths were tested. Although sad paths were built I did not ha
 
 ![](https://img.shields.io/badge/Rails-5.2.4.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Ruby-2.5.3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+
+## Author
+Miguel Guardia | [LinkedIn]() | [GitHub]()
 
 
 
