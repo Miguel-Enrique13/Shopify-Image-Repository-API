@@ -7,7 +7,7 @@ The shopify image repository is an api that allows users to upload/delete images
 ## Table of Contents
 1. [Local Setup](#local-setup)
 1. [Endpoints](#endpoints)
-    - [POST create_user](#post-create-user)
+    - [POST create_user](#post-create_user)
     - [POST authenticate](#post-authenticate)
     - [POST one_image](#post-one-image)
     - [POST bulk_images](#post-bulk-images)
